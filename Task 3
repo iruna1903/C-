@@ -1,0 +1,16 @@
+using Microsoft.VisualBasic;
+using System;
+/**/
+namespace Lab1_3
+{
+    class Program
+    {
+        static void Main()
+        {
+            int hour;
+            hour = Convert.ToInt32(Console.ReadLine());
+            string result = (hour >= 5) && (hour < 10) ? "Доброго ранку!" : (hour >= 10) && (hour < 17) ? "Добрий день!" : (hour >= 17) && (hour < 22) ? "Добрий вечір!" : "Доброї ночі";
+            Console.WriteLine(result);
+        }
+    }
+}
