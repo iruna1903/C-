@@ -1,0 +1,22 @@
+using System;
+namespace Lab2_2
+{
+    class Program
+    {
+        static void Main()
+        {
+            int n1, n2, n3;
+            Console.WriteLine("Введіть перше число");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ввведіть друге число");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введіть третє число");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            int[] arr = { n1, n2, n3 };
+
+            Console.WriteLine("Мінімальне число" + arr.Min());
+            Console.WriteLine("Максимальне число" + arr.Max());
+        }
+    }
+}
