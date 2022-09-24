@@ -1,0 +1,12 @@
+using System;
+namespace Lab1_1
+{
+  static void Main() 
+  {
+      int day, month;
+      day = Convert.ToInt32(Console.ReadLine());
+      month = Convert.ToInt32(Console.ReadLine());
+      string result = (day >= 1) && (day <=31) && (month >= 1) && (month <= 12)? "Значення можуть представляти день і місяць": "Значення не можуть представляти день і місяць";
+      Console.WriteLine(result);
+  }
+}
